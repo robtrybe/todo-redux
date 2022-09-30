@@ -1,3 +1,9 @@
-const getTasks = () => JSON.parse(localStorage.getItem('tasks'))
+export const getTasks = () => {
+    return JSON.parse(localStorage.getItem('tasks'));
+}
 
-export default getTasks;
+export const saveTask = (task) => {
+    const arrayTasks = getTasks();
+    arrayTasks.push(task)
+    localStorage.setItem('tasks',JSON.stringify(arrayTasks));
+}
