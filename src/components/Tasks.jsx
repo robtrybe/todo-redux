@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import getTasks from '../services/tasksApi'
+import getTasks from '../services/tasksApi';
 
 class Tasks extends Component {
   state = { 
     tasks: [],
-   };
+  };
+
   componentDidMount() {
-    const tasks = getTasks()
+    const tasks = getTasks();
     this.setState({
       tasks,
     })
@@ -23,3 +24,5 @@ class Tasks extends Component {
     )
   }
 }
+
+export default Tasks;
