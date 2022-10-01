@@ -1,9 +1,13 @@
 export const getTasks = () => {
-    return JSON.parse(localStorage.getItem('tasks')) || [];
+    return Promise.resolve(JSON.parse(localStorage.getItem('tasks')) || []);
 }
 
-export const saveTask = (task) => {
-    const arrayTasks = getTasks();
-    arrayTasks.push(task)
+export const saveTask = async (task) => {
+    const arrayTasks = await getTasks();
+    arrayTasks.push({ name: task, finish: false })
     localStorage.setItem('tasks',JSON.stringify(arrayTasks));
+}
+
+export const updateTasks = (tasks) => {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
 }
