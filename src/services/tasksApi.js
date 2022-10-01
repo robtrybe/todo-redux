@@ -1,5 +1,5 @@
 export const getTasks = () => {
-    return JSON.parse(localStorage.getItem('tasks'));
+    return JSON.parse(localStorage.getItem('tasks')) || [];
 }
 
 export const saveTask = (task) => {

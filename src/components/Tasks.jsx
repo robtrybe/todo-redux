@@ -1,28 +1,20 @@
 import React, { Component } from "react";
-import getTasks from '../services/tasksApi';
+import { connect } from 'react-redux';
 
 class Tasks extends Component {
-  state = { 
-    tasks: [],
-  };
-
-  componentDidMount() {
-    const tasks = getTasks();
-    this.setState({
-      tasks,
-    })
-  }
 
   render() {
-    const { tasks } = this.state;
+    const { tasks } = this.props;
     return(
       <>
       <ol>
-      { tasks.map((texto) => <li>{ texto }</li>) }
+      { tasks.map((texto,index) => <li key={ index }>{ texto }</li>) }
       </ol>
       </>
     )
   }
 }
 
-export default Tasks;
+const mapStateToProps = (state) => ({tasks:state.tasks})
+
+export default connect(mapStateToProps)(Tasks);
