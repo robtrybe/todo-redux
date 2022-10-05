@@ -1,8 +1,15 @@
 import './App.css';
+import Form from './components/Form';
+import Tasks from './components/Tasks';
 
 function App() {
   return (
-    <h2>Todo</h2>
+    <div>
+     <h2>Todo</h2>
+     <Form/> 
+     <Tasks/>
+    </div>
+    
   );
 }
 
