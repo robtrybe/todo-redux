@@ -1,8 +1,14 @@
 import './App.css';
+import Form from './components/Form';
+import Tasks from './components/Tasks';
+import './styles/Tasks.css';
 
 function App() {
   return (
-    <h2>Todo</h2>
+    <div className="content-container content">
+      <Form />
+      <Tasks />
+    </div>
   );
 }
 
