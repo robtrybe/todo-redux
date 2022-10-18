@@ -5,10 +5,12 @@ import './styles/Tasks.css';
 
 function App() {
   return (
-    <div className="content-container content">
-      <Form />
-      <Tasks />
-    </div>
+    <>
+      <div className="content-container content">
+        <Form />
+        <Tasks />
+      </div>
+    </>
   );
 }
 
