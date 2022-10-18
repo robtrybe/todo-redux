@@ -8,7 +8,7 @@ class Form extends Component {
       <>
         <h1>Lista de Tarefas</h1>
         <form className="form-task content">
-        <input type="text" name="task" />
+        <input type="text" name="task" placeholder='Adicione um tarefa' />
         <button type="button"><ImAddressBook /></button> 
         </form>
       </>

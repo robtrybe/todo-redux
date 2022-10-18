@@ -7,6 +7,15 @@
 .form-task input {
     padding: 10px;
     margin: 5px 0;
+    border: 1px solid #4b86b4;
+    border-radius: 10px;
+    max-width: 480px;
+    width:100%;
+    outline: none;
+}
+
+.form-task input::placeholder {
+    color: #4b86b4;
 }
 
 .form-task button {
@@ -14,4 +23,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #4b86b4;
+    border:1px solid #4b86b4;
+    color: #fff;
+    border-radius:10px;
+    margin: 5px 10px;
 }
