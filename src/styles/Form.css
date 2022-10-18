@@ -23,9 +23,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4b86b4;
-    border:1px solid #4b86b4;
+    background-color: #7bc043;
+    border:1px solid #7bc043;
     color: #fff;
     border-radius:10px;
     margin: 5px 10px;
+}
+
+.form-task .edit {
+    background-color: #4b86b4;
+    border:1px solid #4b86b4;
 }

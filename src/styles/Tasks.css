@@ -1,3 +1,57 @@
 .tasks-container {
     flex:1;
 }
+
+.tasks-container h2 {
+    text-align: center;
+    color: #005b96;
+    font-size: 1.8em;
+    padding: 5px 0;
+}
+
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin:5px 0;
+}
+
+.task-container button {
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+
+.task-container .delete {
+    background-color: #ee4035;
+    border: 1px solid #ee4035;
+}
+
+.task-container .edit {
+    background-color: #4b86b4;
+    border: 1px solid #4b86b4;
+}
+
+.task {
+    flex:1;
+    padding:  0 10px;
+    text-align: center;
+    color: #005b96;
+    margin: 2px 0;
+    user-select: none;
+}
+
+.task-container button {
+    margin: 0 2px;
+}
+
+.task-container .no-task {
+    text-align: center;
+    padding: 10px;
+    color: #005b96;
+    user-select: none;
+}
